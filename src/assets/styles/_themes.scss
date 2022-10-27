@@ -1,0 +1,26 @@
+/*!
+ * Partial themes v1.0.0
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap and Dyma
+ */
+
+.themeBody {
+  background-color: var(--color-light-1);
+}
+.themeNav {
+  background-color: var(--color-dark-2);
+}
+.themeFooter {
+  background-color: var(--color-dark-2);
+}
+.themeColorAncre {
+  color: var(--white);
+  transition: color 0.2s;
+  &:hover {
+    color: var(--color-light-1);
+  }
+  text-decoration: none;
+}
+.themeColorAncreActive {
+  color: var(--color-light-1);
+}

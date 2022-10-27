@@ -1,0 +1,85 @@
+/*!
+ * Partial Base v1.0.0
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap and Dyma
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  composes: themeBody from "./_themes.scss";
+}
+
+header {
+  color: var(--white);
+  height: 54px;
+}
+
+footer {
+  background-color: var(--secondary);
+  color: var(--white);
+  height: 54px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(10px + 2vmin);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    a {
+      composes: themeColorAncre from "./_themes.scss";
+      text-decoration: none;
+      color: var(--white);
+    }
+  }
+}
+
+input {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-size: small;
+  transition: outline-color 0.2s;
+  width: 100%;
+  &:hover {
+    outline-color: var(--info);
+  }
+  &:focus {
+    outline-color: var(--info-2);
+  }
+}
+::placeholder {
+  font-family: var(--font-family);
+}
+
+nav {
+  height: 50px;
+  color: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+
+mark {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  background-color: var(--warning);
+}

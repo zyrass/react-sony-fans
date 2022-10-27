@@ -1,0 +1,22 @@
+.header {
+  composes: themeNav from "../../assets/styles/_themes.scss";
+  ul {
+    height: 100%;
+    li {
+      height: inherit;
+      a {
+        height: inherit;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+.navBrand {
+  composes: themeColorAncreActive from "../../assets/styles/_themes.scss";
+}
+.ancre {
+  composes: themeColorAncre from "../../assets/styles/_themes.scss";
+  composes: themeColorAncreActive from "../../assets/styles/_themes.scss";
+}

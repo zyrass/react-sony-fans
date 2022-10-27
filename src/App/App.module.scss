@@ -1,0 +1,4 @@
+.main {
+  composes: themeBody from "../assets/styles/_themes.scss";
+  min-height: 100vh;
+}

@@ -1,0 +1,54 @@
+/*!
+ * Partial mixins v1.0.0
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap and Dyma
+ */
+
+// verry small
+@mixin xs {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// small
+@mixin sm {
+  @media (min-width: 577px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+// medium
+@mixin md {
+  @media (min-width: 769px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+// medium and lower than
+@mixin md-lt {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+// large
+@mixin lg {
+  @media (min-width: 993px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+// large and lower than
+@mixin lg-th {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+// extra large
+@mixin xl {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}

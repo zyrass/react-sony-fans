@@ -1,0 +1,45 @@
+@use "./mixins" as mixin;
+
+/*!
+ * Partial debug v1.0.0
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap and Dyma
+ */
+
+// debugs empty content
+.debug {
+  // debug n°1
+  &1 {
+    border: 2px solid violet;
+  }
+  // debug n°2
+  &2 {
+    border: 2px solid aqua;
+  }
+  // debug n°3
+  &3 {
+    border: 2px solid darkorange;
+  }
+  // debug n°4
+  &4 {
+    border: 2px solid olive;
+  }
+  // debugs mixins (responsive design)
+  &-mixin {
+    @include mixin.xs {
+      border: 2px dotted tomato;
+    }
+    @include mixin.sm {
+      border: 1px dotted magenta;
+    }
+    @include mixin.md {
+      border: 1px dotted aqua;
+    }
+    @include mixin.lg {
+      border: 1px dotted lawngreen;
+    }
+    @include mixin.xl {
+      border: 1px dotted yellow;
+    }
+  }
+}

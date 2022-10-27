@@ -1,0 +1,52 @@
+/*!
+ * Partial variables v1.0.0
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap and Dyma
+ */
+
+:root {
+  // color
+  --primary: #706fd3;
+  --secondary: #5b5baa;
+  --primary-2: #363669;
+  --secondary-2: #2c2c54;
+
+  --dark: #333333;
+  --white: #f7f1e3;
+
+  --disabled: #d1ccc0;
+  --disabled-2: #84817a;
+  --success: #33d9b2;
+  --success-2: #218c74;
+  --danger: #ff5252;
+  --danger-2: #b33939;
+  --info: #34ace0;
+  --info-2: #227093;
+  --warning: #ffda79;
+  --warning-2: #ccae62;
+  --pink: #dda0dd;
+  --pink-2: #8b468b;
+
+  // background-color
+  --bg-primary: var(--primary);
+  --bg-secondary: var(--secondary);
+  --bg-disabled: var(--disabled);
+  --bg-success: var(--success);
+  --bg-danger: var(--danger);
+  --bg-info: var(--info);
+  --bg-warning: var(--warning);
+  --bg-pink: var(--pink);
+
+  // font-family
+  --font-family: "Montserrat", sans-serif;
+
+  // box-shadow
+  --box-shadow: 0 6px 9px 0 rgb(0 0 0 / 15%);
+  --box-shadow-nav: rgb(0 0 0 / 22%) 0px 2px 18px 0px;
+
+  // theme
+  --color-light-1: var(--pink);
+  --color-light-2: var(--pink-2);
+  --color-dark-1: var(--secondary);
+  --color-dark-2: var(--secondary-2);
+}
