@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .header {
   composes: themeNav from "../../assets/styles/_themes.scss";
   ul {
@@ -11,6 +13,9 @@
         align-items: center;
       }
     }
+    @include mixin.xs {
+      display: none;
+    }
   }
 }
 .navBrand {
@@ -19,4 +24,13 @@
 .ancre {
   composes: themeColorAncre from "../../assets/styles/_themes.scss";
   composes: themeColorAncreActive from "../../assets/styles/_themes.scss";
+}
+
+.headerXS {
+  position: relative; // Pour le menu sur XS
+  display: none;
+  cursor: pointer;
+  @include mixin.xs {
+    display: block;
+  }
 }

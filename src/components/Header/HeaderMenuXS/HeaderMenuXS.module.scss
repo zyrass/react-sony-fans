@@ -1,0 +1,56 @@
+@use "../../../assets/styles/mixins" as mixin;
+
+.menuXS {
+  display: none;
+  @include mixin.xs {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  position: absolute;
+  top: 54px;
+  right: 0;
+  bottom: 0;
+
+  width: 350px;
+  height: calc(100vh - (54px + 108px)) !important;
+
+  background-color: var(--color-dark-1);
+  padding: 15px;
+  border-left: 4px solid var(--color-dark-2);
+  box-shadow: -1px 0 5px var(--dark);
+
+  a {
+    color: var(--color-dark-2) !important;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--color-light-1) !important;
+    }
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px !important;
+    border: 2px solid var(--color-dark-2);
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    background-color: var(--white);
+    &:hover {
+      background-color: var(--color-dark-2);
+      
+    }
+    i {
+      font-size: 16px;
+      color: var(--color-dark-2);
+    }
+    
+    a {
+    }
+  }
+}

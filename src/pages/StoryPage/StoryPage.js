@@ -1,8 +1,8 @@
 function StoryPage() {
   return (
-    <article className="card">
+    <div className="card">
       <h1>Story</h1>
-    </article>
+    </div>
   );
 }
 

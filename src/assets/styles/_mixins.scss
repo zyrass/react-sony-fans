@@ -18,6 +18,13 @@
   }
 }
 
+// small and lower than
+@mixin sm-lt {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 // medium
 @mixin md {
   @media (min-width: 769px) and (max-width: 992px) {

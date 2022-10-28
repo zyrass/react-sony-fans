@@ -1,8 +1,8 @@
 function EmulationPage() {
   return (
-    <article className="card">
+    <div className="card">
       <h1>Emulation</h1>
-    </article>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 function GamesPage() {
   return (
-    <article className="card">
+    <div className="card">
       <h1>Games</h1>
-    </article>
+    </div>
   );
 }
 

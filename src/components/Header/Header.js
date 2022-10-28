@@ -1,14 +1,20 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
+import HeaderShowMenuXS from "./HeaderMenuXS/HeaderMenuXS.";
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function handleClickShowMenu() {
+    console.log("avant", showMenu);
+    setShowMenu(!showMenu);
+  }
+
   return (
     <header className={`d-flex justify-between align-center ${styles.header}`}>
       <span className="ml-20">
-        <Link
-          className={styles.navBrand}
-          to="/"
-        >
+        <Link className={styles.navBrand} to="/">
           Sony Gaming Fans
         </Link>
       </span>
@@ -44,6 +50,18 @@ function Header() {
           </NavLink>
         </li>
       </ul>
+      <i
+        onClick={handleClickShowMenu}
+        className={`fa-solid ${showMenu ? "fa-xmark" : "fa-bars"} mr-20 ${
+          styles.headerXS
+        }`}
+      ></i>
+      {showMenu && (
+        <>
+          <div onClick={() => setShowMenu(false)} className="calc"></div>
+          <HeaderShowMenuXS />
+        </>
+      )}
     </header>
   );
 }

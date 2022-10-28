@@ -27,7 +27,7 @@
   // debugs mixins (responsive design)
   &-mixin {
     @include mixin.xs {
-      border: 2px dotted tomato;
+      border: 2px dotted crimson;
     }
     @include mixin.sm {
       border: 1px dotted magenta;

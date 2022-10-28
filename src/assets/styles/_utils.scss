@@ -4,6 +4,8 @@
  * Inspirated by Bootstrap and Dyma
  */
 
+@use "./mixins" as mixin;
+
 // view-height
 .vh {
   min-height: 100vh;
@@ -525,11 +527,14 @@
   background-color: var(--white);
   border: 2px solid var(--dark);
   border-radius: 4px;
-  width: 90%;
+  width: 100%;
+  height: 100% !important;
   margin: 0 auto;
-  min-width: 400px;
   box-shadow: 0 0 25px var(--color-light-2);
   padding: 20px;
+  @include mixin.xl {
+    width: 1200px;
+  }
 }
 
 // button
@@ -700,11 +705,15 @@
 
 // calque transparent (pour menu)
 .calc {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--dark);
-  opacity: 0.6;
+  display: none;
+  @include mixin.xs {
+    display: block;
+    position: fixed;
+    top: 54px;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    opacity: 0.8;
+  }
 }
