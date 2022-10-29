@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
-    <article>
-      <h2>Playstation - (PSX)</h2>
+    <section className="my-40">
+      <h3>Playstation - (PSX)</h3>
       <p className="my-20">
         <em>
           Sony a sorti sa première console autonome de jeux vidéo, la
@@ -24,7 +24,7 @@ function Playstation1() {
           copie de l'image du disque.
         </em>
       </p>
-    </article>
+    </section>
   );
 }
 

@@ -4,7 +4,7 @@
  * Inspirated by Bootstrap and Dyma
  */
 
-@use './mixins' as mixin;
+@use "./mixins" as mixin;
 
 * {
   box-sizing: border-box;
@@ -16,17 +16,18 @@ body {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
   composes: themeBody from "./_themes.scss";
 }
 
 header {
-  color: var(--white);
+  grid-area: header;
   height: 54px;
+  color: var(--white);
 }
 
 footer {
-  background-color: var(--secondary);
+  grid-area: footer;
+  background-color: var(--dark);
   color: var(--white);
   height: 54px;
   @include mixin.xs {
@@ -90,4 +91,9 @@ mark {
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   background-color: var(--warning);
+}
+
+article {
+  padding: 20px;
+  position: relative;
 }

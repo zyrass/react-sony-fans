@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
-    <article>
-      <h2>Playstation 2 - (PS2)</h2>
+    <section className="my-40">
+      <h3>Playstation 2 - (PS2)</h3>
       <p className="my-20">
         <em>
           Malgré la sortie de la PlayStation 5 en 2020, la fameuse PS2, la
@@ -15,7 +15,7 @@ function Playstation1() {
           jouer à votre jeu préféré sur votre PC.
         </em>
       </p>
-    </article>
+    </section>
   );
 }
 

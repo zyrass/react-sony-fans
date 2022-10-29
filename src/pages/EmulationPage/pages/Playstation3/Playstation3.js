@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
-    <article>
-      <h2>Playstation 3 - (PS3)</h2>
+    <section className="my-40">
+      <h3>Playstation 3 - (PS3)</h3>
       <p className="my-20">
         <em>
           Il y a encore quelques années, on n’imaginait même pas pouvoir émuler
@@ -10,7 +10,7 @@ function Playstation1() {
           RPCS3 pour PC.
         </em>
       </p>
-    </article>
+    </section>
   );
 }
 

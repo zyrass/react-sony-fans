@@ -3,11 +3,15 @@
 .main {
   composes: themeBody from "../assets/styles/_themes.scss";
   min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
 
   div {
+    grid-area: content;
+    grid-row: 1fr;
+    grid-column: 1fr;
     @include mixin.xs {
       padding: 10px;
-      height: calc(100vh - (54px + 108px));
     }
   }
 }

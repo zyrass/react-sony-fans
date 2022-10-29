@@ -55,9 +55,9 @@ function EmulationPage() {
         </ul>
       </nav>
 
-      <hr className="mb-20" />
-
-      <Outlet />
+      <article>
+        <Outlet />
+      </article>
     </div>
   );
 }
