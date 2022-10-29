@@ -5,11 +5,13 @@
   min-height: 100vh;
   display: grid;
   grid-template-areas: "header" "content" "footer";
+  grid-template-rows: 54px 1fr 54px;
 
   div {
     grid-area: content;
     grid-row: 1fr;
     grid-column: 1fr;
+    height: 100%;
     @include mixin.xs {
       padding: 10px;
     }

@@ -648,14 +648,17 @@
 .text {
   // mise en forme
   &-lead {
-    background-color: var(--color-light-1);
     letter-spacing: 2px;
     padding: 10px;
     margin: 10px 0;
+    font-style: italic;
     display: flex;
     justify-content: space-between;
-    font-style: italic;
-    border: 2px solid var(--color-dark-2);
+    @include mixin.xs {
+      font-size: calc(10px + 1vmin);
+      flex-direction: column;
+    }
+
     a {
       font-style: normal;
       font-weight: 700;
@@ -768,9 +771,9 @@
   display: flex;
   justify-content: flex-start;
   column-gap: 10px;
+  flex-wrap: wrap;
   @include mixin.xs {
     row-gap: 15px;
-    flex-wrap: wrap;
   }
   margin: 20px 0;
   a {
