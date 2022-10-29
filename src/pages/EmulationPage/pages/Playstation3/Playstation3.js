@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
     <section className="my-40">
-      <h3>Playstation 3 - (PS3)</h3>
+      <h3><i class="fa-solid fa-circle-info"></i> Playstation 3 - (PS3)</h3>
       <p className="my-20">
         <em>
           Il y a encore quelques années, on n’imaginait même pas pouvoir émuler

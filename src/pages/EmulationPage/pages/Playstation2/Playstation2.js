@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
     <section className="my-40">
-      <h3>Playstation 2 - (PS2)</h3>
+      <h3><i class="fa-solid fa-circle-info"></i> Playstation 2 - (PS2)</h3>
       <p className="my-20">
         <em>
           Malgré la sortie de la PlayStation 5 en 2020, la fameuse PS2, la

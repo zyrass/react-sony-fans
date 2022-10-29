@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
     <section className="my-40">
-      <h3>Playstation 4 - (PS4)</h3>
+      <h3><i class="fa-solid fa-circle-info"></i> Playstation 4 - (PS4)</h3>
       <p className="my-20">
         <em>
           Les jeux PS4 de Sony peuvent être émulés à l'aide de l'émulateur

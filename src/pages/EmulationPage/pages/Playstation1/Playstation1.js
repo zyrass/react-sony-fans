@@ -1,7 +1,7 @@
 function Playstation1() {
   return (
     <section className="my-40">
-      <h3>Playstation - (PSX)</h3>
+      <h3><i class="fa-solid fa-circle-info"></i> Playstation - (PSX)</h3>
       <p className="my-20">
         <em>
           Sony a sorti sa première console autonome de jeux vidéo, la

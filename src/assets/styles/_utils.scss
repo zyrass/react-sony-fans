@@ -792,3 +792,38 @@
     }
   }
 }
+
+// alert
+.alert {
+  border: 1px solid var(--disabled);
+  margin: 20px 0;
+  height: 80px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 36px;
+    padding: 10px 20px;
+  }
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+  }
+  &-danger {
+    background-color: var(--danger-2);
+    color: var(--white);
+  }
+  &-info {
+    background-color: var(--info-2);
+    color: var(--white);
+  }
+  &-warning {
+    background-color: var(--warning-2);
+    color: var(--dark);
+  }
+  &-success {
+    background-color: var(--success-2);
+    color: var(--white);
+  }
+}

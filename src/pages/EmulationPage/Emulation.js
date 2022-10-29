@@ -1,5 +1,6 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Emulation.module.scss";
+import PagesEmulation from "./pages/PagesEmulation";
 
 function EmulationPage() {
   return (
@@ -12,8 +13,9 @@ function EmulationPage() {
         </a>
       </p>
 
-      <hr className="my-20" />
+      <hr className="mt-40 mb-20" />
 
+      <h3>👉 Choisit une génération</h3>
       <nav>
         <ul className="nav_subPage">
           <NavLink
@@ -55,9 +57,7 @@ function EmulationPage() {
         </ul>
       </nav>
 
-      <article>
-        <Outlet />
-      </article>
+      <PagesEmulation />
     </div>
   );
 }
