@@ -1,2 +1,5 @@
 @use "../../assets/styles/mixins" as mixin;
 
+.active {
+  composes: themeColorAncreActive from "../../assets/styles/_themes.scss";
+}
