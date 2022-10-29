@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./HeaderMenuXS.module.scss";
+import logo from "../../../assets/images/Sony_Computer_Entertainment_logo.jpg";
 
 function HeaderShowMenuXS() {
   return (
@@ -22,6 +23,8 @@ function HeaderShowMenuXS() {
           <i className="fa-light fa-gamepad-modern"></i>
         </li>
       </NavLink>
+
+      <img src={logo} alt="Logo sony computer" />
     </ul>
   );
 }
